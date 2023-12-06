@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(3, 3, 3, 0.452);
+    padding: 28px;
+    margin: 28px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px white;
+}
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    border-bottom: solid 1px white;
+    border-bottom: dashed;
+}
+.main-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    
+    
+}
+.user label{
+    width: 95%;
+    color: rgb(255, 241, 241);
+    text-shadow: 4px 4px 4px black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+
+}
+.user input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid rgb(235, 65, 65);
+    padding: 0 10px;
+
+}
+.gender-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender{
+    margin: 15px;
+    color: white;
+}
+.gender label{
+    padding: 0 20px 0 5px;
+    color: white;
+}
+.form-submit{
+    margin-top: 40px;
+    
+}
+.form-submit input{
+    display: block;
+    width: 600px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightcoral;
+}
+
+
+
+@media(max-width:420px){
+
+    .container{
+        width: 99%;
+        height: 100%;
+
+    }
+
+    .title{
+    font-size: 7vw;
+       width: 100%;
+        
+    }
+    .main-user{
+        display: flex;
+        flex-direction: column;
+        width: 190%;
+        height: 10%;
+    }
+    .user{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .user label{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .user input{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+    .gender{
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        width: 80%;
+        
+    }
+
+    .form-submit input{ 
+        display: block;
+        width: 50%;
+        font-size: 4vw;
+        padding: 5%;
+        border: none;
+        border-radius: 1%;
+        color:white;
+        background-color: lightcoral;
+    }
+}
